@@ -1,0 +1,290 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+body, html {
+    height: 100%; /* HTMLとボディの高さを100%に設定 */
+    margin: 0;  /* 余白をなくす */
+    padding: 0;  /* パディングもなくす */
+    font-family: Arial, sans-serif;
+}
+
+.top-image-container {
+    width: 100%;
+    margin: 0; /* 余白を完全に排除 */
+    padding: 0;
+}
+
+.top-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0; /* 余白を完全に排除 */
+    padding: 0;
+    border: none; /* 画像にボーダーがある場合に備えて */
+}
+
+* {
+    box-sizing: border-box; /* すべての要素に適用 */
+}
+
+/* The main ticket container */
+.ticket-container {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Header with image and title */
+.event-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.event-image {
+    width: 95px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.event-title {
+    margin-left: 10px;
+}
+
+.event-title h1 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.event-title p {
+    font-size: 13.5px;
+    color: #4a494f;
+    margin: 5px 0 0;
+}
+.colored-number {
+    color: #666; /* 任意の色に変更 */
+    font-size: 14px;
+}
+
+
+/* Time section for OPEN and START labels */
+.event-time {
+    display: flex;
+    justify-content: space-between; /* Split the boxes equally */
+    font-size: 15px;
+    gap: 15px; /* Space between the boxes */
+    margin-bottom: 2px; /* Add space between the boxes and the time */
+}
+
+/* Each timing box */
+.timing-box {
+    flex: 1; /* Ensure both boxes take equal width */
+    display: flex;
+    justify-content: center; /* Center the label inside */
+    align-items: center;
+    padding: 1px;
+    border-radius: 2px;
+    background-color: #ececec; /* Optional: Light background */
+}
+
+/* Time details below the boxes */
+.event-time-details {
+    display: flex;
+    justify-content: space-between; /* Align times below the respective boxes */
+    gap: 15px; /* Space between the times */
+}
+
+.time {
+    flex: 1;
+    text-align: center; /* Center the time text */
+    font-size: 16px;    /* Adjust the time font size */
+    color: #333;        /* Optional: Time color */
+    margin-bottom: 16px;
+}
+/* Add a border around the entire section from entry-info down */
+.content-wrapper {
+    border: 1px solid #b4b4b5;
+    padding: 0; /* Remove padding to bring content closer to the border */
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Entry information */
+.entry-info {
+    background-color: #f0f9ff;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0; /* Remove margin to make it touch the content-wrapper border */
+    font-size: 15px;
+    color: #3a7cb9;
+    line-height: 1.2;
+    text-align: center;
+    font-weight:bold;
+}
+
+/* Ticket and Gate Details */
+.ticket-details {
+    font-size: 14px;
+    color: #333;
+    margin-top: 13px; /* Add margin to separate it from the entry-info */
+    margin-bottom: 1px;
+}
+
+/* Style for 特定チケット */
+.ticket-label {
+    display: inline-block;
+    padding: 0.5px 7px;
+    border: 1px solid #4b4a4e;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 10px !important;
+    margin-top: 15px; /* Add margin to separate from the above content */
+}
+
+/* Style for the ticket code */
+.ticket-code {
+    color: #6e6e6f !important;
+    font-size: 13.5px;
+    margin-left: 10px !important;
+}
+
+.ticket-type p,
+.gate-info p {
+    margin: 4px 0;
+    color: #4b4a4e;
+    margin-left: 18px !important;
+}
+
+/* Icon and text inside entry-info */
+.entry-info p {
+    margin: 0;
+    padding: 0;
+}
+
+ .rubyposition_under {
+  display: inline-block;
+}
+
+.rubyposition_under ruby {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 名前とふりがなを中央揃えにする */
+}
+
+.rubyposition_under rt {
+  font-size: 0.7em; /* ふりがなのフォントサイズを調整 */
+  margin-left: -10px;
+  margin-top: -1px;  /* 名前との間の間隔を調整 */
+} 
+  .rubyposition_under ruby {
+  position: relative;
+  top: -4px; /* 名前の位置を少し上に調整 */
+}
+
+/* General icon styling */
+.icon {
+    vertical-align: middle;
+    margin-right: 0px;
+}
+
+.ticket-icon {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-left: 117px;  /* 画像の左側にスペースを追加 */
+    margin-right: 10px; /* 画像の右側にスペースを追加 */
+    vertical-align: middle; /* アイコンをテキストの中央に配置 */
+}
+
+
+/* ID Card icon (for "入場口へお進みください") */
+.id-card-icon {
+    width: 30px;
+    height: 30px;
+    margin: -3px 0 0 0;
+}
+
+/* Gate icon (for "入場口: Uゲート") */
+.gate-icon {
+    width: 20px;
+    height: 18px;
+    margin-left: 0.4px;
+    margin-right: 2px;
+}
+
+/* Seat icon (for "座席は入場後に表示されます") */
+.seat-icon {
+    width: 22px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: -0.3px;
+}
+
+.people-icon {
+    width: 22px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: -2px;
+}
+.custom-line {
+    border: none;
+    border-top: 0.7px solid #ddd;
+    width: 90%;  /* 境界線の幅を90%に設定 */
+    margin: 10px auto;  /* 上下に10pxの余白、左右を自動で中央寄せ */
+}
+
+/* Notice */
+.notice {
+    font-size: 12px; /* Smaller font size */
+    color: #000000;
+    margin: 15px 10px; /* Add margin to create space between the notice and the content-wrapper */
+    background-color: #f3f3f3;
+    padding: 5px 10px; /* Smaller padding inside the notice */
+    border-radius: 10px;
+}
+
+/* Align wrapped lines in notice text */
+.notice-text {
+    text-indent: -0.7em;
+    padding-left: 0.8em;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 10px; /* Add margin to create space between buttons and the content-wrapper */
+}
+
+.action-buttons button {
+    padding: 8px 10px; /* Smaller padding for the buttons */
+    font-size: 13px; /* Smaller font size */
+    border-radius: 50px; /* Rounded corners */
+}
+
+/* Enter Button */
+.enter-btn {
+    background-color: #4d57a9;
+    color: white;
+    border: 1px solid #4b4a4e;
+}
+
+/* Refund Button */
+.refund-btn {
+    background-color: white;
+    color: #4d57a9;
+    border: 0.8px solid #000000;
+}
