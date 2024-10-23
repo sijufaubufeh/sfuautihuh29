@@ -69,8 +69,8 @@ body, html {
     margin: 5px 0 0;
 }
 .colored-number {
-    color: #666; /* 任意の色に変更 */
-    font-size: 14px;
+    color: #666 !important; /* 任意の色に変更 */
+    font-size: 14px !important;
 }
 
 
